@@ -1,0 +1,29 @@
+//******************************
+// file A.java
+//******************************
+package a;
+public class A {
+private int x;
+protected int y;
+public int m1() {return x;}
+}
+//******************************
+// file B.java
+//******************************
+package b;
+import a.A;
+public class B extends A {
+private int z;
+public void m2(A a){
+public class A {
+public void print(){ System.out.println("x"); } 3.
+}
+public class B extends A {
+public void print(){ System.out.println("y"); } 6.
+}
+public class Main{
+public static void main(String[] args) {
+B test = new A();
+test.print();
+}
+}
